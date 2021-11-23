@@ -103,7 +103,7 @@ const [signerOneAddress, signerTwoAddress] = [signerOne, signerTwo].map(
 );
 
 const txOverride = {
-  gasPrice: isGodwoken ? 0 : undefined,
+  gasPrice: isGodwoken ? 1000 : undefined,
   gasLimit: isGodwoken ? 1_000_000 : undefined,
 };
 

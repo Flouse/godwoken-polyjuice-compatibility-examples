@@ -72,7 +72,7 @@ interface IFaucet extends Contract {
 const deployerAddress = deployer.address;
 
 const txOverrides = {
-  gasPrice: isGodwoken ? 0 : undefined,
+  gasPrice: isGodwoken ? 1000 : undefined,
   gasLimit: isGodwoken ? 1_000_000 : undefined,
 };
 

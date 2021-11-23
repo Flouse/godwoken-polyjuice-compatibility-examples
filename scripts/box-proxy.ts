@@ -37,7 +37,7 @@ async function main() {
       initializer: "store",
       initializerArgs: [42],
       signer: deployer,
-      gasPrice: isGodwoken ? 0 : undefined,
+      gasPrice: isGodwoken ? 1000 : undefined,
       gasLimit: isGodwoken ? 1_000_000 : undefined,
       shouldIgnoreHistory: Boolean(process.env.IGNORE_HISTORY),
     },
@@ -61,7 +61,7 @@ async function main() {
     {
       initializer: "increment",
       signer: deployer,
-      gasPrice: isGodwoken ? 0 : undefined,
+      gasPrice: isGodwoken ? 1000 : undefined,
       gasLimit: isGodwoken ? 1_000_000 : undefined,
     },
   );
